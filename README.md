@@ -8,9 +8,9 @@ This is a repository for experiments pertaining to the identification of grid ce
 **Deep Learning Library:** Pytorch 1.1.0
 
 ## Todo
-[ ] Train a simple deep convolutional network on MNIST to identify digits
-[ ] Obtain a tSNE representation of the MNIST dataset (testset)
-[ ] Observe the activity pattern of final layer neurons --> ensure if it is similar to place cell-like behavior in digit space
-[ ] Observe the activity pattern of pre-final layer neurons --> ensure if it is similar to grid cell-like behavior in digit space
++ [ ] Train a simple deep convolutional network on MNIST to identify digits
++ [ ] Obtain a tSNE representation of the MNIST dataset (testset)
++ [ ] Observe the activity pattern of final layer neurons --> ensure if it is similar to place cell-like behavior in digit space
++ [ ] Observe the activity pattern of pre-final layer neurons --> ensure if it is similar to grid cell-like behavior in digit space
 
 ## Important notes and hyperparameter considerations

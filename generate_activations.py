@@ -8,12 +8,15 @@ import numpy as np
 from tqdm import tqdm
 from model import Net
 
+# load the dataset - only testset here
 mnist_testset = torchvision.datasets.MNIST(root='./data',train=False,download=True,transform=torchvision.transforms.Compose([torchvision.transforms.ToTensor(),torchvision.transforms.Normalize((0.1307,),(0.3081,))]))
 data_loader = torch.utils.data.DataLoader(mnist_testset,shuffle=False,batch_size=1000)
 
+# load the trained Network
 network = Net()
 network.load_state_dict(torch.load('./results/model.pth'))
 
+# function for generating the activations of final and penultimate layer neurons
 def generate_features(cuda=False):
 	if cuda:
 		network.cuda()
@@ -50,5 +53,6 @@ def generate_features(cuda=False):
 
 	return out_data_arr_sort,out_target_arr_sort,out_h1_arr_sort,out_h2_arr_sort
 
+# generate data, target and neuron activations and save them to npz file
 [out_data_arr,out_target_arr,out_h1_arr,out_h2_arr] = generate_features(cuda=True)
 np.savez('./results/MNIST_data_target_activations.npz', data_arr=out_data_arr, target_arr=out_target_arr, h1_arr=out_h1_arr, h2_arr=out_h2_arr)

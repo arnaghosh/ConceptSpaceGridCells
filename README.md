@@ -10,7 +10,7 @@ This is a repository for experiments pertaining to the identification of grid ce
 ## Todo
 + [X] Train a simple deep convolutional network on MNIST to identify digits -- train_mnist.py
 + [X] Obtain final and pre-final layer neuron activations for MNIST testset images -- generate_activations.py
-+ [ ] Obtain a tSNE representation of the MNIST dataset (testset)
++ [X] Obtain a tSNE representation of the MNIST dataset (testset) -- MNIST_tsne.png
 + [ ] Observe the activity pattern of final layer neurons --> ensure if it is similar to place cell-like behavior in digit space
 + [ ] Observe the activity pattern of pre-final layer neurons --> ensure if it is similar to grid cell-like behavior in digit space
 
@@ -21,3 +21,4 @@ This is a repository for experiments pertaining to the identification of grid ce
 * **Epochs**: 10
 * **Batch Size**: Training = 128, Validation = 1000
 * **Validation accuracy**: 98.79%
+* **TSNE**: Done from Python prompt with np.random.seed(13) without doing PCA. Scatterplot using seaborn as shown [here](https://towardsdatascience.com/visualising-high-dimensional-datasets-using-pca-and-t-sne-in-python-8ef87e7915b)

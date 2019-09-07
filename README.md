@@ -11,7 +11,7 @@ This is a repository for experiments pertaining to the identification of grid ce
 + [X] Train a simple deep convolutional network on MNIST to identify digits -- train_mnist.py
 + [X] Obtain final and pre-final layer neuron activations for MNIST testset images -- generate_activations.py
 + [X] Obtain a tSNE representation of the MNIST dataset (testset) -- MNIST_tsne.png
-+ [ ] Observe the activity pattern of final layer neurons --> ensure if it is similar to place cell-like behavior in digit space
++ [X] Observe the activity pattern of final layer neurons --> ensure if it is similar to place cell-like behavior in digit space - Final_layer_place_cell_activations.png
 + [ ] Observe the activity pattern of pre-final layer neurons --> ensure if it is similar to grid cell-like behavior in digit space
 
 ## Important notes and hyperparameter considerations

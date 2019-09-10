@@ -12,7 +12,7 @@ This is a repository for experiments pertaining to the identification of grid ce
 + [X] Obtain final and pre-final layer neuron activations for MNIST testset images -- generate_activations.py
 + [X] Obtain a tSNE representation of the MNIST dataset (testset) -- MNIST_tsne.png
 + [X] Observe the activity pattern of final layer neurons --> ensure if it is similar to place cell-like behavior in digit space - Final_layer_place_cell_activations.png
-+ [ ] Observe the activity pattern of pre-final layer neurons --> ensure if it is similar to grid cell-like behavior in digit space
++ [X] Observe the activity pattern of pre-final layer neurons --> ensure if it is similar to grid cell-like behavior in digit space - Check the results folder, not grid-like activity
 
 ## Important notes and hyperparameter considerations
 * **Network architecture**: Conv-ReLU(1-->10, *kernelSize=5*), MaxPool(2), Conv-ReLU(10-->20, *kernelSize=5*), Dropout2D(0.5), MaxPool(2), FC-ReLU(320-->50), Dropout(0.5), FC(50-->10), LogSoftMax
